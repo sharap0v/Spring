@@ -1,0 +1,27 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+<!--       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--       xmlns:context="http://www.springframework.org/schema/context"-->
+<!--       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">-->
+<!--    &lt;!&ndash;   постпроцессор для работы анотаций @PostConstruct @PreDestroy &ndash;&gt;-->
+<!--&lt;!&ndash;    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    заместо него при использовании @Component используют component-scan указывают пакет который сканировать на наличие бинов&ndash;&gt;-->
+<!--    <context:component-scan base-package="spring.hw2"/>-->
+
+<!--    &lt;!&ndash; bean definitions here &ndash;&gt;-->
+<!--    &lt;!&ndash;    id нужны для того чтоб доставать из хешь мепа по ид поэтому бины синглтон&ndash;&gt;-->
+<!--&lt;!&ndash;    <bean class="spring.hw2.LikeMessageProvider" id="provider"/>&ndash;&gt;-->
+<!--    <bean class="spring.hw2.WantMessageProvider" id="provider"/>-->
+<!--&lt;!&ndash;    <bean class="spring.hw2.ConsoleMessageRender" id="render">&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="messageProvider" ref="provider"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    </bean>&ndash;&gt;-->
+<!--&lt;!&ndash;    /5&ndash;&gt;-->
+<!--    <bean class="spring.hw2.ConsoleMessageRender" id="render">-->
+<!--        <constructor-arg name="messageProvider" ref="provider"/>-->
+<!--    </bean>-->
+<!--&lt;!&ndash;    <bean class="spring.hw2.InjectFoodStaffAnnotationPostProcessor"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    можно описывать так @Component&ndash;&gt;-->
+
+
+<!--</beans>-->
+<!--        не используем все выше при использовании AnnotationConfigApplicationContext-->
